@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+	<footer>
+		<title>Footer</title>
+		<description></description>
+		<module>
+	 	 	<title>Social</title>
+	 	 	<field>
+	 	 		<name>widget_social</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default><![CDATA[
+
+	 	 			<ul class="social list-unstyled">
+						<li class="over social-facebook">
+							<a href="#" title="Facebook">
+								<em class="fa fa-facebook fa-5x"> </em>
+							</a>
+						</li>
+						<li class="over social-twitter">
+							<a href="#" title="Twitter">
+								<em class="rhb fa fa-twitter"> </em>
+							</a>
+						</li>
+						<li class="over social-google">
+							<a href="#" title="Google">
+								<em class="rhb fa fa-google-plus"> </em>
+							</a>
+						</li>
+						<li class="over social-pin">
+							<a href="#" title="Pinterest">
+								<em class="rhb fa fa-pinterest"> </em>
+							</a>
+						</li>
+						<li class="over social-rss">
+							<a href="#" title="Twitter">
+								<em class="rhb fa fa-rss"> </em>
+							</a>
+						</li>
+					</ul>
+
+	 	 		]]></default>
+	 		</field>
+	 	</module>
+	 	
+	 	<module>
+	 	 	<title>About Us</title>
+	 	 	<field>
+	 	 		<name>widget_about_us</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default><![CDATA[
+
+	 	 			<div class="about">                    
+						<div class="image space-30">        
+							<img class="img-responsive" alt="logo footer" src="image/catalog/logo_footer.png">
+						</div>
+						<div class="content">       
+							<p>
+								All times lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis-mod tincidunt ut laoreet dolore
+							</p>                           
+						</div>
+					</div>
+
+	 	 		]]></default>
+	 		</field>
+	 	</module>	
+	 	<module>
+	 	 	<title>Papal</title>
+	 	 	<field>
+	 	 		<name>widget_papal</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default><![CDATA[
+	 	 			<div class="payment">
+					  <div class="title">
+					    <h5>Payment</h5>
+					  </div>
+					  <div class="image">
+					    <img class="img-responsive" alt="papal" src="image/catalog/payment.png">     
+					  </div>
+					</div>   
+	 	 		]]></default>
+	 		</field>
+	 	</module>
+	</footer>	
+	<copyright>
+		<title>Copyright</title>
+		<description></description>
+	 	<module>
+	 	 	<title>Link</title>
+	 	 	<field>
+	 	 		<name>widget_link</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default><![CDATA[
+
+	 	 			<div class="footer-link space-top-15">
+			            <a href="#">Privacy Policy</a> | 
+			            <a href="index.php?route=information/sitemap">Site Map</a>
+			       	</div>
+
+	 	 		]]></default>
+	 		</field>
+	 	</module>
+	</copyright>
+</theme>
+

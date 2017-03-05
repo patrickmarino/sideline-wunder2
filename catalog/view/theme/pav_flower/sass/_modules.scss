@@ -1,0 +1,151 @@
+/* category */
+.category{
+    .list-group{
+        margin-bottom: 0;
+    }
+    ul{
+    	&.level1{
+    		@include rtl-padding-left(0);
+    	}
+    	li{
+	    	@include rtl-padding-left(0);
+	    	display: block;
+	    	padding-bottom:8px;
+	    	padding-top:8px;
+	        a{
+	            text-transform: uppercase;
+	        }
+	    }
+	    ul{
+	    	@include rtl-padding-left(20px);
+	    	> li{
+	    		position:relative;
+				&:before{
+					content: "";
+					background: $text-color;
+					@include size(5px,1px);
+					@include rtl-left(-16px);
+					top: 19px;
+					position:absolute;
+				}
+	    	}
+	    }
+    }
+   
+}
+/**Filter*/
+.filters{
+	.panel-body{
+		border: 1px solid $border-color;
+	}
+	.filter-title{
+		text-transform: uppercase;
+		color: $theme-color;
+		padding: 0 16px;
+		font-weight: 700;
+	}
+	.filter-content{
+		padding: 5px 36px 0;
+	}
+	label{
+		font-weight: inherit;
+	}
+}
+/* Newsletter */
+.newsletter{
+	padding: 22px 0;
+	.box-heading{
+		display: inline-block;
+		@include rtl-float-left();
+		@include rtl-margin-right(55px);
+    	margin-top: 13px;
+	}
+	h3{
+		font-size: $font-size-base + 1;
+		color: $white;
+		text-transform: uppercase; 	
+		margin: 0;
+		@include rtl-padding-left(50px);
+		font-weight: 300;
+		font-family: $font-family-second;
+		letter-spacing: 2px;
+	}
+	.input-group{
+		border-bottom: 1px solid rgba(255,255,255,0.6);
+	}
+	.email{
+		background-color: transparent;
+		border-color: transparent;
+    	box-shadow: none;
+    	margin-top: 9px;
+    	margin-bottom: 2px;
+    	color: rgba(255,255,255,0.5);
+    	font-style: italic;
+	}
+	.icon-mail{
+		background-color: transparent;
+		color: $white;
+	}
+	.valid {
+	    position: absolute;
+	    width: 100%;
+	    z-index: 99;
+	}
+	.alert {
+	    width: 100% !important;	
+	}
+	.form-control{
+		&::-moz-placeholder {
+		    color: rgba(255,255,255,0.5); // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+		}
+		&:-ms-input-placeholder { color: rgba(255,255,255,0.5); } // Internet Explorer 10+
+		&::-webkit-input-placeholder  { color: rgba(255,255,255,0.5); } // Safari and Chrome
+	}
+}
+// Interactive Banner ----------------------
+.interactive-banner{
+	.banner-title h4{
+		margin: 0;
+		font-weight: normal;
+		font-size: $font-size-base;
+	}
+	p{
+		margin-bottom: 22px;
+	}
+	.interactive-banner-body{
+		@include rtl-border-right(1px solid #d7d7d7);
+	}
+}
+// Widget Product deal
+.productdeals{
+	.item-countdown{
+		position: absolute;
+		top: 19px;
+		left: 16px;
+		font-weight: 600;
+		ul > li{
+			color: #9e0039;
+		}
+
+	}
+}
+// pavpopulartag ----------------------
+.pavpopulartag{
+	a{
+		padding: 6px 15px;
+		background-color: #e9e9e9;
+		@include rounded-corners(5px);
+		margin-bottom: 5px;
+		display: inline-block;
+		@include transition(all 0.3s ease-in-out 0s);
+		&:hover{
+			background-color: $theme-color;
+			color: $white;
+		}
+	}
+
+}
+
+
+
+

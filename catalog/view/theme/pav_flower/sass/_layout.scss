@@ -1,0 +1,289 @@
+html {
+    overflow-x: hidden;
+}
+/* top */
+header, .container{
+	position: relative
+}
+body{
+    overflow-x: hidden;
+}
+body.layout-boxed-lg {
+    background-color: $white;
+    margin: 0 auto;
+    max-width: 1200px;
+    .vertical-top{
+        top: -445px;
+    }
+    .pav-verticalmenu{
+        .navbar-default{
+            visibility: hidden;
+            opacity: 0;
+        }
+        &:hover,&:focus{
+           .navbar-default{
+                visibility: visible;
+                opacity: 1;
+            } 
+        }
+    }
+}
+.common-home {  
+    .alert {
+        @include container-fixed;
+        margin-top: 20px;
+        @media (max-width: $screen-xs) {
+            width: 300px;
+        }
+        @media (min-width: $screen-sm-min) {
+            width: $container-sm - 30;
+        }
+        @media (min-width: $screen-md-min) {
+            width: $container-md - 30;
+        }
+        @media (min-width: $screen-lg-min) {
+            width: $container-lg - 30;
+        }
+    }   
+}
+#top {	
+    background-color: $topbar-bg;
+	border-top: $topbar-border;
+	padding: $topbar-padding ;
+    font-size: $topbar-font-size ;    
+    color: $topbar-color;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+	.currency-select {
+        border: none;
+        background: transparent;
+        line-height: 2;
+        @include rtl-margin-left(10px);
+        color: $topbar-link-sub-color;
+        white-space: nowrap;
+		&:hover {
+			text-shadow: none;
+			color: $topbar-link-sub-hover-color
+		}
+	}
+    .language-select{
+        border: none;
+        background: transparent;
+        color: $topbar-link-sub-color;
+        &:hover {
+            color: $topbar-link-sub-hover-color
+        }
+    }
+    a{
+    color: $topbar-link-color;
+        &:hover{
+            color: $topbar-link-hover-color;
+        }
+    }
+    .phones{
+        padding-top: 3px;
+    }
+    .dropdown-menu a {
+        text-shadow: none;
+        color: $topbar-link-sub-color;
+        &:hover{
+            color: $topbar-link-sub-hover-color;
+        }
+    }
+}
+/* top links */
+#top-links {
+    .btn-link strong {
+      font-size: 14px;
+      line-height: 14px;
+    }  
+}
+#header-main{
+    background-color: $headermain-bg;
+    padding: $headermain-padding;
+    #logo-theme{
+        a{        
+            background: url("#{$image-theme-path}logo.png") no-repeat;    
+            display: inline-block;
+            @include size(127px,100px);
+            span{
+                display: none;
+            }
+        }
+    }
+}
+
+/* search */
+#search {
+	input {
+		height: 36px;
+		line-height: 20px;
+		padding: 0 10px;  
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: none;
+        font-style: italic;
+	}
+	.btn-lg {
+        color: $black;
+		font-size: 15px;
+		line-height: 18px;
+		padding: 8px 14px;
+        background-color: transparent;
+        border:1px solid $header-border-color;
+        @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+        &:hover{
+            color: $theme-color;
+        }
+	}
+}
+
+/* cart */
+.cart-top{
+    position: absolute;
+    @include rtl-right(0);
+    top: 26px;
+    cursor: pointer;
+}
+#cart {    
+	.dropdown-toggle{
+		i{
+			display: block;
+			font-size: 30px;
+			@include rtl-float-left();
+		}
+		font-size: 15px;	
+		color: #FFFFFF;
+	}
+	.dropdown-menu {
+        z-index: 1001;
+        min-width: 427px;
+        padding: 20px;
+        table.first {
+            tr{
+                > td{
+                   padding:10px 3px;
+                   a{
+                    color: $black;
+                    font-weight: 600;
+                   }
+                   &.image{
+                        @include rtl-padding-right(10px);
+                   }
+                }
+            }   
+        }
+    }
+    .icon-cart{
+        background: url("#{$image-theme-path}icon_minicart.png") no-repeat scroll center center;
+        content: "";
+        position: relative;
+        @include size(60px,32px);
+        top: 3px;
+    }
+    #cart-total{
+        color: #383737;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        border-bottom: 3px solid $theme-color;
+        @include rtl-float-left();
+        margin-top: 9px;
+        padding-bottom: 3px;
+    }
+}
+.breadcrumb{
+    padding-left:0px;
+    padding-right:0px;
+    margin-top: 8px;
+    position: relative;
+}
+.maincols{
+    overflow:hidden;
+}
+/* content */
+#content {
+	min-height: 500px;
+}
+
+/* footer */
+footer{
+    background:$footer-bg;
+    color:$footer-color;
+    padding-bottom:$footer-padding-bottom  ;
+    padding-bottom:$footer-padding-top  ;
+    margin-top: 30px;
+    h5{
+        color:$white;
+        font-weight: normal;
+        font-size: $font-size-base + 2;
+        text-transform: uppercase;
+        margin-bottom: 19px;
+        font-family: $font-family-second;
+    }
+    a{
+        color: $footer-link-color;
+        text-transform: uppercase;
+        font-size: $footer-link-font-size;
+        &:hover{
+            color: $footer-link-hover-color;
+        }
+    }
+    .footer-top{ 
+        background-color: $footer-top-bg;
+        position: relative;
+    }
+    .footer-center{    
+        position: relative;     
+        .inner {
+            margin-top: 22px;
+        }
+    }
+    .footer-bottom{ }
+    
+}
+
+.common-home{
+   footer{
+        margin-top: 0;
+    } 
+}
+/*------------------------------------*\
+    Copyright
+\*------------------------------------*/
+.copyright{
+    background: $copyright-bg;
+    color: $copyright-color;
+    font-size: $copyright-font-size;
+    border-bottom: $copyright-border;
+    float: left;
+    width: 100%;
+    @include box-size($copyright-bg, $copyright-padding-top, $copyright-padding-bottom);
+    .footer-link{
+        @include rtl-float-right();
+        a{
+            padding: 0 10px;
+            text-transform: uppercase;
+        }
+    }
+    .input-group{
+        border: 0px;
+        .fa{
+            color: $gray-light;
+        }
+    }
+    a{
+        color: $copyright-link-color;
+        
+        &:hover,&:focus,
+        &:active{
+            color: $copyright-link-hover-color;
+        }
+    }
+    address{ 
+        margin: 0;
+    }
+    .payment{
+        padding-top: 30px;
+    }
+}

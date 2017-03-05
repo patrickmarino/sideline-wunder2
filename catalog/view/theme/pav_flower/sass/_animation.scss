@@ -1,0 +1,70 @@
+.carousel{
+  &.horizontal{
+    .carousel-inner {
+      height: 100%;
+    }
+    .item {
+      @include transition(0.6s ease-in-out top);
+      @include rtl-left(0);
+    }
+    .active {
+      top: 0;
+      &.left {
+        top: -400px;
+      }
+      &.right {
+        top: 400px;
+      }
+    }
+    .next {
+      top: 400px;
+      &.left,&.right{
+        top: 0;
+      }
+    }
+    .prev {
+      top: -400px; 
+    }
+  }
+}
+.product-block{
+  @include transition(all 0.3s ease-in-out 0s);
+  @include box-shadow(0 2px 3px 0 rgba(0, 0, 0, 0.3));
+  .button{
+    bottom: 0;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    right: 0;
+    visibility: hidden;
+    @include transition(all 0.4s ease-in-out 0s);
+  }
+  &:hover{
+    background-color: $white;
+    @include box-shadow(0px 2px 5px 0 rgba(0, 0, 0, 0.3));
+    .button{
+      @include box-shadow(0px 6px 5px 0 rgba(0, 0, 0, 0.3));
+      bottom: -34px;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.social {
+  a{
+    @include transition(all 0.3s ease 0s);
+  }
+}
+.pav-megamenu{
+  .dropdown-menu{
+    @include translateY(10%);
+    @include transition(all 500ms cubic-bezier(0.09, 0.5, 0, 0.99) 0s);
+  }
+  .dropdown:hover{
+    .dropdown-menu{
+      @include translateY(0);
+    }
+  }
+}

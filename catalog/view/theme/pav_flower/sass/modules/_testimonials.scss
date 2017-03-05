@@ -1,0 +1,18 @@
+/**---------------------------testimonials----------------------------------***/
+.testimonials{
+    color: $white;
+    background-color: $theme-color;
+    .testimonials-avatar{
+        text-align: center;
+        @include rtl-padding(47px, 0px, 0px, 35px);
+        overflow: hidden;
+        @include rtl-float-left();
+    }
+    .testimonials-profile{
+    	font-weight: 700;
+        margin-top: 19px;
+    }
+    .testimonials-body{
+    	@include rtl-padding(44px, 10px, 22px, 99px);
+    }
+}

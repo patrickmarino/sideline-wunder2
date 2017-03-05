@@ -1,0 +1,42 @@
+.panel {
+ 	@include box-shadow(0 0px 0px transparent);
+}
+.panel-body .list-group-item{
+	border: none;
+ 	&:hover{
+ 		background: #f2f2f2;
+ 	}
+ 	&:hover > a, li:hover a{
+ 		font-weight: bold;
+ 	}
+	ul li{
+		padding: 5px 0;
+		border: none;
+	}
+}
+.nav-tabs{
+	padding: 21px 0;
+}
+.list-unstyled{
+    color: #333;
+    font-size: 13px;
+    line-height: 25px;
+	span{
+		color: $theme-color-second;
+	}
+}
+#sidebar-right #column-right {
+  	width: 100%;
+  	.panel-heading h3 {
+  		&:before{
+  			content: none;
+  		}
+	}
+	.panel-heading {
+  		margin-bottom: 0;
+	}
+}
+.alert {
+  position: relative;
+  z-index: 10;
+}
