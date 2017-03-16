@@ -394,7 +394,7 @@ body {
   font-size: 13px;
   line-height: 1.42857;
   color: #383737;
-  background-color: #fff;
+   -color: #fff;
 }
 
 /* line 36, ../sass/bootstrap/_scaffolding.scss */
@@ -3167,34 +3167,34 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 71, ../sass/bootstrap/_buttons.scss */
 .btn-primary {
   color: #fff;
-  background-color: #406618;
-  border-color: #335113;
+  background-color: #5e5e5e;
+  
   border-radius: 5px;
   transition: all 0.3s ease 0s;
 }
 /* line 12, ../sass/bootstrap/mixins/_buttons.scss */
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #81cd30;
-  border-color: #81cd30;
+  background-color: #68dcf5;
+  /*border-color: #68dcf5;*/
 }
 /* line 18, ../sass/bootstrap/mixins/_buttons.scss */
 .btn-primary:hover {
   color: #fff;
-  background-color: #81cd30;
-  border-color: #81cd30;
+  background-color: #68dcf5;
+  /*border-color: #81cd30;*/
 }
 /* line 23, ../sass/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #81cd30;
-  border-color: #81cd30;
+  background-color: #68dcf5;
+  /*border-color: #81cd30;*/
 }
 /* line 30, ../sass/bootstrap/mixins/_buttons.scss */
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #81cd30;
-  border-color: #81cd30;
+  background-color: #68dcf5;
+  /*border-color: #81cd30;*/
 }
 /* line 38, ../sass/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
@@ -7462,7 +7462,11 @@ header, .container {
 /* line 8, ../sass/_layout.scss */
 body {
   overflow-x: hidden;
-  background: url("../image/default/background.png");
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+50,0+50,1+86,1+100 */
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(128,128,128,0) 50%, rgba(36,36,36,1) 86%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(128,128,128,0) 50%,rgba(36,36,36,1) 86%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(128,128,128,0) 50%,rgba(36,36,36,1) 86%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
 /* line 11, ../sass/_layout.scss */
@@ -7744,7 +7748,7 @@ body.layout-boxed-lg .pav-verticalmenu:hover .navbar-default, body.layout-boxed-
 /* footer */
 /* line 210, ../sass/_layout.scss */
 footer {
-  background: #000;
+  /*background: #000;*/
   color: rgba(255, 255, 255, 0.6);
   padding-bottom: 30px;
   padding-bottom: 30px;
@@ -7771,7 +7775,7 @@ footer a:hover {
 }
 /* line 232, ../sass/_layout.scss */
 footer .footer-top {
-  background-color: #000;
+  /*background-color: #000;*/
   position: relative;
 }
 /* line 236, ../sass/_layout.scss */
@@ -8452,7 +8456,7 @@ footer .footer-center .inner {
 .product-block .product-meta .btn-action:hover {
   background-color: #68dcf5;
   color: #FFFFFF;
-  border-color: #406618;
+  /*border-color: #406618;*/
 }
 /* line 103, ../sass/_product.scss */
 .product-block .btn {
@@ -12759,19 +12763,11 @@ iframe {
 
 /* line 51, ../sass/_style.scss */
 .shadow-right:before {
-  background-color: #000;
-  content: "";
-  width: 12px;
-  height: 100%;
-  left: 7px;
-  position: absolute;
-  top: 0px;
-  transform: rotate(-8deg);
+  
 }
 /* line 108, ../sass/mixins/_rtl.scss */
 .rtl .shadow-right:before {
-  right: 7px;
-  left: auto;
+  
 }
 
 .product {
@@ -13123,6 +13119,18 @@ div.required .control-label::before {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.interactive-banner {
+    border: 1px solid #ebebeb;
+    background-color: #fafafa;
+    /*margin-bottom: 30px;*/
+    border-radius: 10px !important;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
 /* line 107, ../sass/_modules.scss */
 .interactive-banner .banner-title h4 {
   margin: 0;
@@ -13136,6 +13144,7 @@ div.required .control-label::before {
 /* line 115, ../sass/_modules.scss */
 .interactive-banner .interactive-banner-body {
   /*border-right: 1px solid #d7d7d7;*/
+  padding: 0px 20px;
 }
 /* line 22, ../sass/mixins/_rtl.scss */
 .rtl .interactive-banner .interactive-banner-body {
@@ -13786,6 +13795,20 @@ div.required .control-label::before {
 
 .offer-box h1 {
   color: #fff;
+}
+
+.offer-box p {
+  border: 1px solid #ebebeb;
+  background-color: #fafafa;
+  /*margin-bottom: 30px;*/
+  border-radius: 10px !important;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  padding: 6px;
+
 }
 
 .display-none {

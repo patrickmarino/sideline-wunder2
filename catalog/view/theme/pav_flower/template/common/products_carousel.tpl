@@ -34,7 +34,7 @@
 ?>
 <div class="productcarousel panel-default">
 	<div class="panel-heading none-border">
-		<h3 class="panel-title"><span><?php echo $heading_title?></span></h3>
+		<img class="product" alt="logo footer" src="image/catalog/related_products.png">
 	</div>
 
 	<div class="products-owl-carousel owl-carousel-play" id="wrap<?php echo $id; ?>" data-ride="owlcarousel">

@@ -31,7 +31,6 @@ class ControllerExtensionModulepavhomebuilder extends Controller {
 		$this->load->model('extension/module');
 		$this->load->model('extension/pavwidget');
 
-	 
 
 		if( isset($this->request->get['home_id']) ){
 			$mod = $this->model_extension_module->getModule( $this->request->get['home_id'] );
@@ -44,7 +43,7 @@ class ControllerExtensionModulepavhomebuilder extends Controller {
 		$setting = array_merge($d, $setting);
 
 		if( $setting['module_id'] ){
-			$this->widgets = $this->model_extension_pavwidget->getWidgetsByModuleId( $setting['module_id'] );  
+			$this->widgets = $this->model_extension_pavwidget->getWidgetsByModuleId( $setting['module_id'] ); 
 		}
 	
 
@@ -57,6 +56,7 @@ class ControllerExtensionModulepavhomebuilder extends Controller {
 		if( isset($setting['template']) ){
 			$tpl = 'pavhomebuilder/'.$setting['template'].'.tpl'; 
 		}	
+
 		if (file_exists('catalog/view/theme/' . $this->config->get('theme_default_directory') . '/stylesheet/homebuilder.css')) {
 			$this->document->addStyle('catalog/view/theme/' . $this->config->get('theme_default_directory') . '/stylesheet/homebuilder.css');
 		} else {

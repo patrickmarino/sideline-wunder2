@@ -1,7 +1,7 @@
 <?php $ckey = time().rand(); ?>
 <div class="space-40 box box-category panel-default hightlight">
   <div class="panel-heading">
-  <h3 class="panel-title"><span><?php echo $heading_title?></span></h3>
+<img class="product" alt="" src="image/catalog/categories.png" style="width: 350px;padding-right: 75px;height:50px;">
   </div>
   <div class="box-body">
   <div class="tree-menu">
