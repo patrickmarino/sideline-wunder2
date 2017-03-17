@@ -13814,3 +13814,12 @@ div.required .control-label::before {
 .display-none {
   display: none;
 }
+.cat img{
+  /* margin-bottom: 30px; */
+  border-radius: 10px !important;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 32px 0 rgba(0, 0, 0, 0.3);
+}

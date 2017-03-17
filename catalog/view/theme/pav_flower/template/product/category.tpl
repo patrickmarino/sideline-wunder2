@@ -16,7 +16,7 @@
       <?php if ($thumb || $description) { ?>
       <div class="row">
         <?php if ($thumb) { ?>
-        <div class="col-sm-12"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-responsive" /></div>
+        <div class="col-sm-12 cat"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-responsive" /></div>
         <?php } ?>
         <div class="col-sm-12"><h1><?php echo $heading_title; ?></h1></div>
         <?php if ($description) { ?>
