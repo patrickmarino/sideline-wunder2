@@ -4,6 +4,7 @@ admin/config.php
 
 !index.html
 
+opencart-wpf/
 download/
 image/data/
 image/cache/
