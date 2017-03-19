@@ -1,5 +1,8 @@
 <?php echo $header; ?>
 <style type="text/css">
+  body {
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgb(251, 251, 251) 50%,rgb(254, 254, 254) 86%,rgb(254, 254, 254) 100%);
+  }
   #footer,#powered, #header,.tab-v1,.breadcrumb,.copyright,.product-related,.quickview-tags,#top-scroll{
     display: none;
   }
