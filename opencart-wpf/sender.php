@@ -73,7 +73,7 @@ if ($shipping == "" || $shipping == null)
     $shipping = "0.00";
 }
 
-$_mid = ""; //<-- your merchant id
+$_mid = "00000022021748F5B246"; //<-- your merchant id
 $_requestid = $orderid;
 $_ipaddress = "127.0.0.1";
 $_noturl = ""; //notification receiver
@@ -97,7 +97,7 @@ $_amount = number_format(($order_total), 2, '.', $thousands_sep = '');
 $_currency = $currency; //PHP or USD
 
 $forSign = $_mid . $_requestid . $_ipaddress . $_noturl . $_resurl . $_fname . $_lname . $_mname . $_addr1 . $_addr2 . $_city . $_state . $_country . $_zip . $_email . $_phone . $_clientip . number_format(($_amount), 2, '.', $thousands_sep = '') . $_currency . $_sec3d;
-$cert = ""; //<-- your merchant key
+$cert = "B0A7F53B687180D386B7546E53208201"; //<-- your merchant key
 
 //	echo $_mid . "<hr />";
 //	echo $cert . "<hr />";
