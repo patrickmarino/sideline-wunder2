@@ -602,10 +602,10 @@ website:   	http://www.themepunch.com
 
 
 
-.tp-leftarrow.default									{	z-index:20;cursor:pointer; position:relative;	background:url(../assets/arrow_outline_left.png) no-Repeat 0 0;	width:50px;	height:45px;
+.tp-leftarrow.default									{	z-index:20;cursor:pointer; position:relative;	background:url(../assets/arrow_large_left.png) no-Repeat 0 0;	width:50px;	height:45px;
 
 														}
-.tp-rightarrow.default									{	z-index:20;cursor:pointer; position:relative;	background:url(../assets/arrow_outline_right.png) no-Repeat 0 0;	width:50px;	height:45px;
+.tp-rightarrow.default									{	z-index:20;cursor:pointer; position:relative;	background:url(../assets/arrow_large_right.png) no-Repeat 0 0;	width:50px;	height:45px;
 
 														}
 
