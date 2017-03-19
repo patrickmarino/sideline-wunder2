@@ -7737,6 +7737,7 @@ body.layout-boxed-lg .pav-verticalmenu:hover .navbar-default, body.layout-boxed-
 /* line 201, ../sass/_layout.scss */
 .maincols {
   overflow: hidden;
+  background-color: #fff;
 }
 
 /* content */
