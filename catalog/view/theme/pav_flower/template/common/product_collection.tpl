@@ -49,7 +49,6 @@
 			// echo $listingConfig['product_layout']; die;
 		?>
 		<div class="col-lg-<?php echo $span;?> col-md-<?php echo $span;?> col-sm-4 col-xs-<?php echo $mini;?> product-col border">			
-			
 			<?php require( ThemeControlHelper::getLayoutPath( 'common/product/'.$listingConfig['product_layout'].'.tpl' ) );  ?>   	
 		</div>
 		
