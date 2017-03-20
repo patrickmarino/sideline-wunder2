@@ -4,13 +4,13 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-/* $headings-font-weight:    700 !default; */
+/* $headings-font-weight:    700 !default;c */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /* line 9, ../sass/bootstrap/_normalize.scss */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;c
 }
 
 /* line 19, ../sass/bootstrap/_normalize.scss */
@@ -13122,15 +13122,7 @@ div.required .control-label::before {
 }
 
 .interactive-banner {
-    border: 1px solid #ebebeb;
-    background-color: #fafafa;
-    /*margin-bottom: 30px;*/
-    border-radius: 10px !important;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+
 }
 
 /* line 107, ../sass/_modules.scss */
@@ -13146,7 +13138,16 @@ div.required .control-label::before {
 /* line 115, ../sass/_modules.scss */
 .interactive-banner .interactive-banner-body {
   /*border-right: 1px solid #d7d7d7;*/
-  padding: 0px 20px;
+  padding: 20px 20px;
+  border: 1px solid #ebebeb;
+  background-color: #fafafa;
+  /*margin-bottom: 30px;*/
+  border-radius: 10px !important;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
 }
 /* line 22, ../sass/mixins/_rtl.scss */
 .rtl .interactive-banner .interactive-banner-body {

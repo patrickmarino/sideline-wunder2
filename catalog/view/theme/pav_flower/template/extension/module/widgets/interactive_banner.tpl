@@ -1,16 +1,16 @@
 <div class="space-40 interactive-banner interactive-banner-<?php echo $banner_type;?> <?php echo $effect_type;?> <?php echo $position;?>">
+    <div class="banner-title">
+        <?php if($sub_title){?>
+        <small><?php echo $sub_title;?></small>
+        <?php }?>
+        <?php if( $show_title ) { ?>
+            <div class="widget-heading widget-heading-h1"><h1 class="panel-title"><?php echo $heading_title?></h1></div>
+        <?php } ?>
+    </div>
 	<div class="interactive-banner-body">
         <?php if($thumbnailurl){?>
         <img alt="" src="<?php echo $thumbnailurl;?>" class="img-responsive"><?php }?>
         <div class="interactive-banner-profile">
-        	<div class="banner-title">
-        		<?php if($sub_title){?>
-                <small><?php echo $sub_title;?></small>
-                <?php }?>
-            	<?php if( $show_title ) { ?>
-					<div class="widget-heading widget-heading-h1"><h1 class="panel-title"><?php echo $heading_title?></h1></div>
-		        <?php } ?>
-        	</div>
         	<!-- <div class="light-style">
 				<?php if($facebook_use){?>
                     <a href="https://www.facebook.com/<?php echo $facebook_use?>"><i class="icons icons-bodered radius-x fa fa-facebook"></i></a>
